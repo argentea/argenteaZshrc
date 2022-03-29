@@ -206,7 +206,6 @@ findf() {
 		for i; do
 			findargs="${findargs}-o -type f -name $i -print "
 		done
-		echo ${(z)findargs}
 		find ${(z)findargs}
 		unset findargs
 	fi
